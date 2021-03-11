@@ -4,10 +4,56 @@
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  width: 100%;
+}
+
+
+.contact{
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__title{
+  font-weight: bold;
+}
+.contact__data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contact__data--input{
+  border: none;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  margin: 10px;
+  width: 60%;
+  text-align: center;
+  color: #000;
+}
+
+.contact__message{
+  background: #000;
+  width: 60%;
+  height: 200px;
+}
+
+.contact__button{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: row-reverse;
+}
+.contact__button--body{
+  background: rgb(172, 21, 21);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  width: 180px;
+}
+.contact__button--body-text{
+  margin: 6px;
 }
